@@ -1,0 +1,11 @@
+<h2>Develhope Shop</h2>
+
+<div [funko]="funko" class="hero-card" *ngFor="let funko of funkos" (click)=onSelection(funko) >
+<img src="{{funko.img}}" alt="prodotto">
+<br>
+{{funko.title}}
+<br>
+{{funko.price}}€
+
+<button>Show Details</button> 
+ </div> 

@@ -1,0 +1,13 @@
+.hero-card{
+    border: 1px black solid;
+    height: 29vh;
+    width: 11vw;
+    margin-bottom: 1vh;
+    padding: 1vh;
+    margin-left: 1vw;
+}
+
+img{
+    height: 20vh;
+    width: 8vw;
+}
