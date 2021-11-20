@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Info } from '../models/info';
 import { Funkos } from '../models/products';
 
@@ -9,11 +9,14 @@ import { Funkos } from '../models/products';
 })
 export class CardListComponent implements OnInit {
 
-  @Input() funkos?: Info;
+  @Input() cards!:Info[];
+  @Output() dadTalk= new EventEmitter<Info>();
+ 
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

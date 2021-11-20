@@ -1,6 +1,7 @@
-<div class="cardlist">
+<div class="main" >
+  <h2>Develhope Shop</h2>
 
-    <app-hero-details [funko]="funko"></app-hero-details>
-
-
+  <div class="child" *ngFor="let card of cards">
+    <app-single-card [hero]="card" (btn)="dadTalk.emit($event)"></app-single-card>
+  </div>
 </div>

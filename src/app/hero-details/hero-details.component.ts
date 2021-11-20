@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Info } from '../models/info';
 import { Funkos } from '../models/products';
 
@@ -9,11 +9,14 @@ import { Funkos } from '../models/products';
 })
 export class HeroDetailsComponent implements OnInit {
 
-@Input() funkos?: Info;
-
+  @Input() card:Info | undefined;
+  @Output() close = new EventEmitter<undefined>();
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
+
 
 }

@@ -1,0 +1,7 @@
+<div id="card">
+  <img src="{{ hero.img }}" alt="Modello" />
+  <p>{{ hero.title }}</p>
+  <p>{{ hero.price }}€</p>
+
+  <button (click)="btn.emit(hero)">Show Details</button>
+</div>

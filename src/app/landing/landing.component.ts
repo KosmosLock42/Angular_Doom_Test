@@ -5,15 +5,22 @@ import { Funkos } from '../models/products';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.css']
+  styleUrls: ['./landing.component.css'],
 })
 export class LandingComponent implements OnInit {
+  puppets: Info[] = Funkos;
+  switcher: Info | undefined; 
 
-  funkos = Funkos;
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  Message(card: Info) {
+    this.switcher = card;
+  }
+
+  tabClose(){
+    this.switcher = undefined;
   }
 
 }

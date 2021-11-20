@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  width: 60vw;
+}
+
+.welcome h1,
+h3 {
+  font-size: 700;
+}
+
+.welcome img {
+  width: 60vw;
+  padding: 3vh;
+}
+
+.switchbox {
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
